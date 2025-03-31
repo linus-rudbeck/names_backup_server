@@ -9,8 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>se.distansakademin</groupId>
-	<artifactId>names_backup_server</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>app</artifactId>
 	<name>names_backup_server</name>
 	<description>Names backup server</description>
 	<url/>

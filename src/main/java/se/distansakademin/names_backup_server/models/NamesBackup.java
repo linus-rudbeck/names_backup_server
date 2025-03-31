@@ -13,9 +13,9 @@ public class NamesBackup {
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long id;
 
-    public String title = "";
+    public String title;
 
-    public String names = "";
+    public String names;
 
 
     public Long getId() {
