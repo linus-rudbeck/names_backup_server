@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Names Backup Server</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+
+<h1>Names Backup Server</h1>
+
+<p>This is a server for backing up a list of names</p>
+
+<form th:action="@{/}" method="post" th:object="${backup}">
+    <div>
+        <input type="text" th:field="*{title}" placeholder="Title">
+    </div>
+
+    <div>
+        <textarea th:field="*{names}" placeholder="Names"></textarea>
+    </div>
+
+    <button type="submit">Go</button>
+</form>
+
+<ul>
+    <li th:each="b : ${backups}">
+        <p th:text="${b.title}"></p>
+        <p th:text="${b.names}"></p>
+    </li>
+</ul>
+
+</body>
+</html>
